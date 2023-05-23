@@ -70,6 +70,8 @@ const material = new THREE.MeshStandardMaterial({
   transparent: true,
 });
 
+gui.add(material, "wireframe");
+
 // Objects
 
 const plane = new THREE.Mesh(new THREE.PlaneGeometry(4, 4, 64, 64), material);
